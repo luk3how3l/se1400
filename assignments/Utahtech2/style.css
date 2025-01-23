@@ -1,0 +1,58 @@
+body {
+    background-color: #ffffff; /* White background color */
+    color: #666666;             /* Text color */
+    font-family: Arial, sans-serif; /* Font family */
+}
+
+/* Styles for the header element */
+header {
+    background-color: #003058; 
+    color: #FFFFFF;            
+    font-family: Georgia, serif; 
+}
+
+/* Descendent selector for header h1 */
+header h1 {
+    line-height: 140%; /* Line height */
+    padding: 0.5rem;   /* Padding */
+}
+
+/* Styles for the nav element */
+nav {
+    background-color: #f3f3f3; /* Light-gray background color */
+    font-weight: bold;         /* Bold text */
+}
+
+/* Styles for the h2 element */
+h2 {
+    color: #424242;           /* Medium-gray text color */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Font family */
+}
+
+/* Styles for the dt element (used on students page) */
+dt {
+    color: #003058;  /* Text color */
+    font-weight: bold; /* Bold font */
+}
+
+/* Styles for the class named .ut */
+.ut {
+    color: #BA1C21; /* Text color */
+    font-weight: bold; /* Bold font */
+}
+
+
+/* Styles for the footer element */
+footer {
+    font-size: 0.70rem; /* Small font size */
+    font-style: italic; /* Italic text */
+    text-align: center; /* Centered text */
+}
+
+
+#wrapper {
+    width: 80%;        
+    margin-right: auto; 
+    margin-left: auto;  
+}
+
