@@ -1,0 +1,98 @@
+/*
+can use a div to for the floater section.  ALso
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    background: linear-gradient(to bottom, #ffffff, #eee);
+    color: #666666;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(3, minmax(0px, 3.5fr)) minmax(0px, 1fr); 
+    grid-template-rows: minmax(0px,120px) repeat(4, minmax(0px, 4fr)) minmax(0px, 1fr);
+    height: 100vh; /* Full viewport height */
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+/* Floats element */
+#floater {
+    display: grid;
+    position: fixed;
+    top: 0;
+    grid-template-columns: minmax(0px, 1fr) repeat(9, minmax(0px, 2fr)) minmax(0px, 1fr);
+    background-color: #a4d2f9;
+    width: 100%; /* Ensure the floater spans the full width */
+    z-index: 100; /* Float it above other content */
+}
+
+header {
+    background-color: #003058;
+    color: #FFFFFF;
+    font-family: Georgia, serif;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 20px;
+}
+
+header picture {
+    grid-column: 1 / 2;
+}
+
+header h1 {
+    grid-column: 2 / -1;
+    background-color: brown;
+    padding: 10px;
+}
+
+nav {
+    background-color: #c58f2c;
+    grid-column: 2 / -2;
+    grid-row: 2 / 3;
+    position: sticky;
+    top: 0;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+section {
+    grid-column: 2 / 3;
+    background-color: #fff;
+    padding: 1rem;
+}
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: -2 / -1;
+    background-color: #424242;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-style: italic;
+}
