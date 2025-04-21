@@ -1,8 +1,80 @@
-/*
-can use a div to for the floater section.  ALso
-*/
-body{
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url("../web-media/background-flow.jpg");
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: minmax(0px, 1fr) repeat(6, minmax(0, 175px)) minmax(0px, 1fr);
+    gap: 20px;
+    min-height: 100vh;
+}
+
+/* Grid areas with semi-transparent colors */
+.margin {
+    min-height: 100%;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+.header {
+    grid-column: 2 / 8;
+    background-color: rgba(100, 150, 200, 0.3);
+    padding: 20px;
+    min-height: 200px;
+}
+
+main {
+    grid-column: 2 / 8;
+    display: grid;
+    gap: 20px;
+}
+
+.intro {
+    background-color: rgba(150, 100, 200, 0.3);
+    min-height: 300px;
+    padding: 20px;
+}
+
+.projects {
+    background-color: rgba(200, 100, 150, 0.3);
+    min-height: 400px;
+    padding: 20px;
+}
+
+footer {
+    grid-column: 2 / 8;
+    background-color: rgba(100, 200, 150, 0.3);
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Preserve your existing styles for navigation and other elements */
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    padding: 10px 20px;
+    background-color: rgba(128, 128, 128, 0.92);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+/* Responsive images */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #wrapper{
@@ -81,19 +153,6 @@ header img{
     height: 150px;
     width: 150px;
 }
-nav{
-    padding-right: 1rem;
-    padding-left: 5 rem;
-}
-
-nav a{
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: grabbing;
-    color: azure;
-    text-decoration: none ;
-    background-color: rgba(128, 128, 128, .92);
-}
 
 #a1 {
     grid-column: 2/-3;
@@ -166,19 +225,6 @@ nav a{
     height: 300px;
     width: auto;
 }
-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border-color: bisque;
-    border: 5px;
-    grid-column: 2/-2;
-    grid-row: -2/-1;
-    background-color: rgba(0, 0, 0, .78);
-    color: white;
-    z-index: 10;
-    margin: 0;
-}
 #contact{
     
     margin-right: 0px;
@@ -209,10 +255,6 @@ footer{
 #copy{
     font-style: italic;
 }
-
-
-
-
 
 @media screen and (max-width: 1200) {
     #wrapper{
