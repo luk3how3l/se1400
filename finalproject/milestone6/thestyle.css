@@ -23,7 +23,7 @@ body {
 .top-nav {
     grid-column: 1 / -1;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 1.5rem 2rem;
     background-color: #ffffff;
