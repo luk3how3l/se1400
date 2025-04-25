@@ -169,35 +169,58 @@ body {
     transition: transform 0.3s ease;
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
-    grid-column: 2 / -2;
-    grid-row: -2 / -1;
+    grid-column: 1 / -1;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    color: white;
-    padding: 1rem;
-    z-index: 10;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-top: 1px solid #eee;
+    margin-top: 4rem;
 }
 
-#contact, #estim, #locat {
-    flex: 1;
-    text-align: center;
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
-footer a {
-    color: white;
+.footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
     text-decoration: none;
+    color: #000;
+    transition: all 0.3s ease;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.footer-logo:hover {
+    background-color: #000;
+    color: #fff;
 }
 
-#copy {
-    font-style: italic;
-    margin-top: 0.5rem;
+.footer-contact {
+    text-decoration: none;
+    color: #000;
+    border: 2px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.footer-contact:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 /* PDF Links */
@@ -437,6 +460,17 @@ footer a:hover {
 
     .reflection-quote blockquote {
         font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
