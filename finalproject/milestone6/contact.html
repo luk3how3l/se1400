@@ -54,10 +54,11 @@
             <section id="a3">
                 <div>
                     <h3>Contact Form</h3>
-                    <form id="contact-form" action="mailto:Davelukehowell@Gmail.com" method="post" enctype="text/plain">
+                    
+                    <form id="contact-form" class="kf-form" action="https://kwesforms.com/api/f/pvsjVS83w7NtLTtegZSY" method="POST" enctype="text/plain">
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" rules="required|max:255" >
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
@@ -82,5 +83,6 @@
             </section>
         </main>
     </div>
+    <script src="https://kwesforms.com/v2/kf-script.js" defer></script>
 </body>
 </html> 
