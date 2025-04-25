@@ -35,6 +35,12 @@ body {
     z-index: 1000;
 }
 
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -44,6 +50,7 @@ body {
     text-decoration: none;
     color: #000;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .logo:hover {
@@ -87,6 +94,7 @@ body {
     border-radius: 4px;
     font-weight: 500;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .contact-button:hover {
@@ -323,9 +331,11 @@ footer a:hover {
     #wrapper {
         grid-template-columns: 1fr;
     }
+    
     .profile-section {
         margin-top: 50px;
     }
+    
     .main-content {
         grid-column: 1 / -1;
         padding: 1rem;
@@ -337,19 +347,19 @@ footer a:hover {
         gap: 1rem;
     }
 
-    .logo {
-        display: none;
-    }
-
     .nav-links {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        width: 100%;
     }
 
-    /* Hide Home mobile view */
-    .nav-links a[href="index.html"] {
+    .logo {
         display: none;
+    }
+
+    .nav-links a[href="index.html"] {
+        display: block;
     }
 
     .profile-container {
@@ -395,9 +405,27 @@ footer a:hover {
         padding: 0.4rem 0.8rem;
         font-size: 0.9rem;
     }
+
+    .hobby-list li {
+        padding: 0.4rem 0;
+        font-size: 0.9rem;
+    }
+
+    .video-container {
+        margin: 1rem 0;
+    }
+
+    .reflection-quote {
+        padding: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .reflection-quote blockquote {
+        font-size: 0.9rem;
+    }
 }
 
-/* Hover Effects */
+/* Hover  */
 .nav-link:hover, .contact-button:hover {
     opacity: 0.8;
 }
@@ -444,22 +472,8 @@ footer a:hover {
     line-height: 1.6;
 }
 
-/* Responsive adjustments for extras content */
-@media screen and (max-width: 768px) {
-    .hobby-list li {
-        padding: 0.4rem 0;
-        font-size: 0.9rem;
-    }
 
-    .reflection-quote {
-        padding: 0.8rem;
-        margin-top: 1rem;
-    }
 
-    .reflection-quote blockquote {
-        font-size: 0.9rem;
-    }
-}
 
 /* Video Container */
 .video-container {
@@ -496,13 +510,6 @@ footer a:hover {
     object-fit: cover;
 }
 
-/* Responsive adjustments for video */
-@media screen and (max-width: 768px) {
-    .video-container {
-        margin: 1rem 0;
-    }
-}
-
 /* Video Link Styles */
 .video-link {
     color: #000;
@@ -526,4 +533,9 @@ footer a:hover {
 
 .video-link:hover::after {
     opacity: 1;
+}
+
+/* Hide Home on desktop view */
+.nav-links a[href="index.html"] {
+    display: none;
 }

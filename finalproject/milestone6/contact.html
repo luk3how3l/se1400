@@ -29,9 +29,9 @@
                     </div>
                 </div>
                 <picture>
-                    <source media="(max-width: 768px)" srcset="../media/Awayo2023.jpg">
-                    <source media="(max-width: 992px)" srcset="../media/Awayo2023.jpg">
-                    <img src="../media/Awayo2023.jpg" alt="Contact Information">
+                    <source media="(max-width: 768px)" srcset="../media/Awayo2023.webp">
+                    <source media="(max-width: 992px)" srcset="../media/Awayo2023.webp">
+                    <img src="../media/Awayo2023.webp" alt="Contact Information">
                 </picture>
             </section>
 
@@ -55,22 +55,22 @@
                 <div>
                     <h3>Contact Form</h3>
                     
-                    <form id="contact-form" class="kf-form" action="https://kwesforms.com/api/f/pvsjVS83w7NtLTtegZSY" method="POST" enctype="text/plain">
+                    <form id="contact-form" class="kf-form" action="https://kwesforms.com/api/f/8889" method="POST">
                         <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" rules="required|max:255" >
+                            <input type="text" id="name" name="name" rules="required|max:255">
                         </div>
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" rules="required|email">
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" required>
+                            <input type="text" id="subject" name="subject" rules="required|max:255">
                         </div>
                         <div class="form-group">
                             <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
+                            <textarea id="message" name="message" rows="4" rules="required|min:10|max:1000"></textarea>
                         </div>
                         <button type="submit" class="submit-button">Send Message</button>
                     </form>
