@@ -55,23 +55,15 @@
                 <div>
                     <h3>Contact Form</h3>
                     
-                    <form id="contact-form" class="kf-form" action="https://kwesforms.com/api/f/8889" method="POST">
-                        <div class="form-group">
+                    <form id="contact-form" action="https://kwesforms.com/api/f/8889" method="POST">
                             <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" rules="required|max:255">
-                        </div>
-                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
                             <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" rules="required|email">
-                        </div>
-                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
                             <label for="subject">Subject:</label>
-                            <input type="text" id="subject" name="subject" rules="required|max:255">
-                        </div>
-                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
                             <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="4" rules="required|min:10|max:1000"></textarea>
-                        </div>
+                            <textarea id="message" name="message" rows="4" required></textarea>
                         <button type="submit" class="submit-button">Send Message</button>
                     </form>
                 </div>
