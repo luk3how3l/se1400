@@ -268,6 +268,21 @@ footer a:hover {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/*iframe container */
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.iframe-container iframe {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
 /* Social Links */
 .social-links {
     display: flex;
@@ -471,9 +486,6 @@ footer a:hover {
     font-style: italic;
     line-height: 1.6;
 }
-
-
-
 
 /* Video Container */
 .video-container {
