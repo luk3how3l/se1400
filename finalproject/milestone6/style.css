@@ -486,6 +486,12 @@ footer {
 /* Extras Page Styles */
 .hobby-list {
     margin-top: 1rem;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style-type: none;
+    padding: 0;
 }
 
 .hobby-list ul {
