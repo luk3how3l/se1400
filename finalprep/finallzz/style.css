@@ -1,0 +1,151 @@
+/* Structual Elements Go Here */
+body{
+    background-color: #edeeef;
+    color: #555;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: minmax(0px,1fr) repeat(6, minmax(0,175px)) minmax(0px,1fr);
+}
+nav{
+    grid-column: 2/ 3;
+    background-color: #edeeef;
+}
+main{
+    grid-column: 3/ -2;
+    background-color: #fff;
+    padding: 20px;
+}
+footer{
+    grid-column: 3/-2;
+    background-color: #2d5ba6;
+    color: #fff;
+    font-size: 0.5 rem;
+    padding: 20px;
+    text-align: center;
+}
+/* Navigation Elements Go Here */
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+li img{
+    width: 100%;
+    max-width: 200px;
+}
+nav ul li{
+    width: 100%;
+}
+nav ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: #555;
+    display: block;
+    padding: 10px;
+}
+nav ul li a:hover, nav ul li a.active {
+    background-color: #fff;
+    color: #d53631;
+}
+
+
+/* Styling Elements Go Here */
+p{
+    line-height: 1.25 rem;
+}
+footer p{
+    line-height: .2 rem;
+}
+.links{
+    color: #d53631;
+}
+
+.logo img, .hero img, video{
+    width: 100%;
+    height: auto;
+}
+
+h2{
+    color: #555;
+    border-bottom: 2px solid #555 ;
+    margin-top: 10px;
+}
+/* make header border */
+
+.simage-text{
+    width: 300px;
+    
+    height: auto;
+    font-style: italic;
+    text-align: center;
+    font-size: .75 rem;
+    float: right;
+    padding: 0 0 10px 10px;
+}
+.simage-text p{
+    margin-top: 0px;
+    font-size: .75 rem;
+}
+.simage-text img{
+    width: 100%;
+    
+}
+/* Media Query of 960 and less goes here */
+@media (max-width: 960px) {
+    nav, main, footer{
+        grid-column: 2/-2;
+    }
+    nav{
+        padding: 5px;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+        align-items: baseline;
+        justify-content: space-between;
+        
+    }
+    nav ul li {
+        width: auto;
+    }
+    .simage-text{
+        width: 100%;
+        float: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
